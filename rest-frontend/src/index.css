@@ -1,0 +1,197 @@
+/* Container for the order details */
+.order-details-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pending-orders-title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.order-item {
+  padding: 15px;
+  margin: 10px 0;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order-item p {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.view-details-btn {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.view-details-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Dialog/modal styles */
+.order-details-modal {
+  width: 400px;
+  padding: 20px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+
+.order-details-modal h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.order-details-modal p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.order-item-list {
+  list-style-type: none;
+  padding-left: 0;
+  font-size: 15px;
+  color: #333;
+}
+
+/* Accept and reject buttons */
+.accept-btn, .reject-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.accept-btn {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.accept-btn:hover {
+  background-color: #218838;
+}
+
+.reject-btn {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.reject-btn:hover {
+  background-color: #c82333;
+}
+
+/* Close modal button */
+.close-modal-btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.close-modal-btn:hover {
+  background-color: #0056b3;
+}
+
+/* General Modal Styles */
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+/* Modal Styles */
+.order-details-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  max-width: 600px;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Modal header */
+.order-details-modal h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+/* Modal content */
+.order-details-modal p {
+  margin-bottom: 20px;
+  color: #666;
+}
+
+/* Modal actions */
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+/* Modal button styles */
+.button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 10px;
+}
+
+.button[type="button"] {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.button[type="button"]:hover {
+  background-color: #0056b3;
+}
+
+.button[type="submit"] {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.button[type="submit"]:hover {
+  background-color: #218838;
+}
